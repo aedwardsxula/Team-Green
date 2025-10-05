@@ -206,3 +206,8 @@ Test 1
 Arrange: A dataset was loaded from the CSV file containing the number of children and corresponding charges.
 Act: The slope, intercept, and Pearson correlation coefficient were calculated, and charges were predicted for a range of child counts.
 Assert:The output correctly displayed the Pearson correlation coefficient and the predicted charges for each child count.
+
+Test 2 
+Arrange: A dataset was loaded from the CSV file containing  the number of children and corresponding charged where the correlation is weak
+Act: The slope , intercept, and Pearson correlation coefficient were calculated, and predicted charges were generated using the linear regression model
+Assert: The program prints the Pearson correlation coefficient close to 0 , confirming a weal correlation and displays the charge values accordingly
