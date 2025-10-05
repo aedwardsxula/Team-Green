@@ -61,9 +61,9 @@ Act: Make a histogram showing the age distribution of smokers
 Assert: The console shows the correct age bins and labels
 
 Test 2
-Arrange:
-Act:
-Assert:
+Arrange:Smokers ages [59, 37, 29]
+Act:Run AgeDistribution.analyze(store)
+Assert:Labels are printed in the fixed order.
 
 Task 16
 Feature: Average Age of Smokers
