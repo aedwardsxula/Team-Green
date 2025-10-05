@@ -60,6 +60,11 @@ Arrange:
 Act: Make a histogram showing the age distribution of smokers
 Assert: The console shows the correct age bins and labels
 
+Test 2
+Arrange:
+Act:
+Assert:
+
 Task 16
 Feature: Average Age of Smokers
 Test 1
