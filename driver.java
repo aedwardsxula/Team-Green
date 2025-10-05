@@ -34,6 +34,7 @@ public class driver {
         task9.check_bmi_ranges();
 
         //Task 10
+        ChildrenChargeAnalysis.analyze(store);
 
         //Task 11
         Task11 task11 = new Task11(store.getRecords());
@@ -61,6 +62,7 @@ public class driver {
         task17.compare_smoking_by_region();
 
         //task 18
+        BMIByRegion.analyze(store);
 
         //Task 19
         Task19 task19 = new Task19(store.getRecords());
