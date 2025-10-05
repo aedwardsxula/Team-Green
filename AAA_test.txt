@@ -60,6 +60,11 @@ Arrange:
 Act: Make a histogram showing the age distribution of smokers
 Assert: The console shows the correct age bins and labels
 
+Test 2
+Arrange:Smokers ages [59, 37, 29]
+Act:Run AgeDistribution.analyze(store)
+Assert:Labels are printed in the fixed order.
+
 Task 16
 Feature: Average Age of Smokers
 Test 1
@@ -181,6 +186,12 @@ Test 1
 Arrange: A dataset of InsuranceRecord objects was created with region and smoker information.
 Act:  A Task17 object was created with this dataset and the compare_smoking_by_region() method was called.
 Assert: The output correctly displayed the average age for southern and northern smokers and indicated which group was older or if they were the same.
+
+Test 2
+Arrange:A dataset of InsuranceRecord objects was created where northern smokers have a higher average age than southern smokers 
+Act: A Task17 object was created with this dataset and the compare_smoking_by_region() method was called
+Assert:The program prints "Northern smokers are older on average than southern ones"
+
 ---------
 Task 19
 Feature: Compare average number of children and average age between southern and northern regions
@@ -189,9 +200,19 @@ Arrange: A dataset of InsuranceRecord objects was created with region, age, and 
 Act: A Task19 object was created with this dataset and the compare_children_by_region() method was called.
 Assert: The output correctly displayed the average number of children and average age for both southern and northern regions.
 
+Test 2
+Arrange: A dataset of InsuranceRecord objects was created where southern regions have a higher average number of children, but lower average of ages than northern regions.
+Act: A Task19 object was created with this dataset and the compare_children_by_region() function was called
+Assert: The program prints "Southern regions have more children on average but northern regions have higher average ages.
+
 Task 21 
 Feature: Predict insurance charges based on number of children using linear regression
 Test 1
 Arrange: A dataset was loaded from the CSV file containing the number of children and corresponding charges.
 Act: The slope, intercept, and Pearson correlation coefficient were calculated, and charges were predicted for a range of child counts.
 Assert:The output correctly displayed the Pearson correlation coefficient and the predicted charges for each child count.
+
+Test 2 
+Arrange: A dataset was loaded from the CSV file containing  the number of children and corresponding charged where the correlation is weak
+Act: The slope , intercept, and Pearson correlation coefficient were calculated, and predicted charges were generated using the linear regression model
+Assert: The program prints the Pearson correlation coefficient close to 0 , confirming a weal correlation and displays the charge values accordingly
