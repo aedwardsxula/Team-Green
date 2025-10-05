@@ -181,6 +181,12 @@ Test 1
 Arrange: A dataset of InsuranceRecord objects was created with region and smoker information.
 Act:  A Task17 object was created with this dataset and the compare_smoking_by_region() method was called.
 Assert: The output correctly displayed the average age for southern and northern smokers and indicated which group was older or if they were the same.
+
+Test 2
+Arrange:A dataset of InsuranceRecord objects was created where northern smokers have a higher average age than southern smokers 
+Act: A Task17 object was created with this dataset and the compare_smoking_by_region() method was called
+Assert:The program prints "Northern smokers are older on average than southern ones"
+
 ---------
 Task 19
 Feature: Compare average number of children and average age between southern and northern regions
@@ -188,6 +194,11 @@ Test 1
 Arrange: A dataset of InsuranceRecord objects was created with region, age, and children information.
 Act: A Task19 object was created with this dataset and the compare_children_by_region() method was called.
 Assert: The output correctly displayed the average number of children and average age for both southern and northern regions.
+
+Test 2
+Arrange: A dataset of InsuranceRecord objects was created where southern regions have a higher average number of children, but lower average of ages than northern regions.
+Act: A Task19 object was created with this dataset and the compare_children_by_region() function was called
+Assert: The program prints "Southern regions have more children on average but northern regions have higher average ages.
 
 Task 21 
 Feature: Predict insurance charges based on number of children using linear regression
