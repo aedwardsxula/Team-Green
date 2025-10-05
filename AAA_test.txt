@@ -55,6 +55,11 @@ Arrange:
 Act: Make a histogram showing the age distribution of smokers
 Assert: The console shows the correct age bins and labels
 
+Test 2
+Arrange: Make a dataset of only smokers at each boundary.
+Act: Run the AgeDistribution.analyze(store) function.
+Assert: The console shows the Total number of smokers and prints bins.
+
 Task 16
 Feature: Average Age of Smokers
 Test 1
@@ -152,3 +157,4 @@ Test 1
 Arrange:
 Act: 
 Assert:
+
